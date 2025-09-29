@@ -34,12 +34,12 @@ public class Producto {
         this.precio = precio;
     }
 
+    public void aumentoPrecio(double aumento){
+        this.precio = this.precio + (this.precio * (aumento / 100));
+    }
+
     @Override
     public String toString() {
-        return "Producto{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", precio=" + precio +
-                '}' + '\n';
+        return this.id + ";" + this.nombre + ";" + this.precio;
     }
 }

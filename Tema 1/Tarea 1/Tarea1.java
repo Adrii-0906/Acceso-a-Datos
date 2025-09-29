@@ -168,7 +168,7 @@ public class Tarea1 {
 
             System.out.println(productos);
             for (Producto p : productos) {
-                p.setPrecio(p.getPrecio() * 1.10);
+                p.aumentoPrecio(10);
             }
 
             for (Producto p : productos) {
@@ -176,7 +176,10 @@ public class Tarea1 {
                 bw.newLine();
             }
 
+            bw.close();
+            br.close();
             System.out.println("Correctamente actualizado");
+
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -4,55 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5b62d6-0a34-4743-9d39-d5805bc6d47d" name="Changes" comment="" />
+    <list default="true" id="21872684-0646-4d67-9f60-0f62055e53c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="333i02OlfrEkSmPFtF0ruUIAeoQ" />
+  <component name="ProjectId" id="33MgH0SlSS65l9W2NLtvjEKfSs5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Tarea1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/adrian/Documentos/2DAM/PSP/Tema1/Tarea1"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f5b62d6-0a34-4743-9d39-d5805bc6d47d" name="Changes" comment="" />
-      <created>1758551930462</created>
+      <changelist id="21872684-0646-4d67-9f60-0f62055e53c0" name="Changes" comment="" />
+      <created>1759132263589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1758551930462</updated>
+      <updated>1759132263589</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Tarea1.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
