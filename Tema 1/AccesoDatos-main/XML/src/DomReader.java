@@ -14,12 +14,19 @@ public class DomReader {
         NodeList nodes = doc.getElementsByTagName("book");
         List<Book> books = new ArrayList<>();
 
+        // Aqui recorremos cada libro
         for (int i = 0; i < nodes.getLength(); i++) {
             Element e = (Element) nodes.item(i);
             Book b = new Book();
             b.id = e.getAttribute("id");
             b.title  = textOf(e, "title");
-            b.author = textOf(e, "author");
+
+            NodeList authorsList = e.getElementsByTagName("authors");
+
+            for (int j = 0; j < authorsList.getLength(); j++) {
+                b.authors.add(authorsList.item(j).getTextContent());
+            }
+            
             b.year   = parseIntSafe(textOf(e, "year"));
             b.price  = parseDoubleSafe(textOf(e, "price"));
             books.add(b);

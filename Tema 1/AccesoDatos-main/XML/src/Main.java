@@ -4,12 +4,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        /*
         if (args.length == 0) {
             System.out.println("Uso: java Main [dom|sax|stax] [ruta_xml_opcional]");
             return;
         }
         String mode = args[0].toLowerCase();
         File xml = new File(args.length >= 2 ? args[1] : "books.xml");
+        */
+
+        String mode = "sax";
+        File xml = new File("XML/src/books.xml");
 
         List<Book> books;
         switch (mode) {

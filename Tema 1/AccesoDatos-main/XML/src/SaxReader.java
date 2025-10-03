@@ -38,7 +38,7 @@ public class SaxReader {
                 if (current != null) {
                     switch (qName) {
                         case "title":  current.title  = text; break;
-                        case "author": current.author = text; break;
+                        case "author": current.authors.add(text); break;
                         case "year":   if (!text.isEmpty()) current.year  = Integer.parseInt(text); break;
                         case "price":  if (!text.isEmpty()) current.price = Double.parseDouble(text); break;
                         case "book":   books.add(current); current = null; break;
