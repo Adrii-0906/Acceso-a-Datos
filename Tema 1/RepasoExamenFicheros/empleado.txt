@@ -1,0 +1,3 @@
+Juan;25;Programador
+Ana;30;Diseñadora
+Oscar;47;Hostelero
