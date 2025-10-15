@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e3285-6edf-4649-bcf4-1490e13fd6d0" name="Changes" comment="" />
+    <list default="true" id="b03ca59e-85fc-4f2d-b538-1029ca2407e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,15 +18,16 @@
     </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
+  "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="33mUTvSD8TxnAEjtmBcvXZLR2Nd" />
+  <component name="ProjectId" id="346AxOXZVUWFZ8bCnZLFfYQqK6N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MainAlumnos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true"
   }
@@ -34,11 +35,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="451e3285-6edf-4649-bcf4-1490e13fd6d0" name="Changes" comment="" />
-      <created>1759921752143</created>
+      <changelist id="b03ca59e-85fc-4f2d-b538-1029ca2407e5" name="Changes" comment="" />
+      <created>1760523894277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759921752143</updated>
+      <updated>1760523894277</updated>
     </task>
     <servers />
   </component>
