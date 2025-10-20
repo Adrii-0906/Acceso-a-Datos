@@ -1,0 +1,103 @@
+📦 Práctica: Sistema de Gestión de Inventario y Ventas
+
+Objetivo: Desarrollar un programa en Java que utilice ficheros de texto plano para gestionar el inventario de productos y el registro de sus ventas.
+
+Funcionalidades a Implementar (Menú Principal)
+
+El programa deberá presentar un menú interactivo con las siguientes opciones:
+
+1.- Añadir Productos
+
+2.- Devolver el Precio de un Producto (por nombre y referencia)
+
+3.- Registrar Venta (acumulativa)
+
+4.- Calcular Ingreso Total por Producto
+
+1. Añadir Productos
+
+Permite introducir por pantalla una lista de productos con la siguiente información:
+
+Nombre del Producto
+
+Referencia Única (Ej: REF-P123)
+
+Precio Unitario
+
+Stock Inicial
+
+Almacenamiento en Productos.txt
+
+Los productos se almacenarán en el fichero Productos.txt (crearlo si no existe) con el siguiente formato, utilizando la barra vertical (|) como delimitador:
+
+ID|Nombre|Referencia|Precio|Stock;
+
+Ejemplo de almacenamiento en Productos.txt:
+
+1|Teclado Mecánico|KM-500|75.99|25;
+2|Ratón Óptico|MO-201|15.50|100;
+3|Monitor 27"|MN-27-4K|350.00|10;
+
+
+ID Autonumérico
+
+El ID será autonumérico y consecutivo. El programa debe leer el fichero Productos.txt para determinar el último ID utilizado y asignar el siguiente (último ID + 1).
+
+Flujo
+
+Al finalizar cada inserción, se debe preguntar: Pulsa 1 para insertar otro producto, o 0 para salir:
+
+2. Devolver el Precio de un Producto
+
+El programa solicitará el Nombre del Producto y su Referencia Única para buscarlo en Productos.txt.
+
+Si lo encuentra: Devolverá el Precio Unitario.
+
+Si no existe: Deberá lanzar una excepción controlada (personalizada) con el mensaje: "El producto con nombre <nombre> y referencia <referencia> no se encuentra en el inventario."
+
+Requisito Clave: Debe crear y lanzar una clase de excepción: ProductoNoEncontradoException.
+
+3. Registrar Venta (Acumulativa)
+
+Permite registrar una venta de un producto en el archivo Ventas.txt (crearlo si no existe).
+
+Se solicita el Nombre y la Referencia del producto.
+
+Se obtiene su ID (utilizando la funcionalidad anterior, manejando la excepción si no se encuentra).
+
+Se solicitan los datos de la venta:
+
+Cantidad Vendida
+
+Fecha de Venta (Ej: 2025-10-20)
+
+Almacenamiento en Ventas.txt
+
+Los registros de venta son acumulativos para el mismo producto. El formato es:
+
+ProductID|CantidadVendida;FechaVenta
+
+Ejemplo de almacenamiento en Ventas.txt (el ID 2 se ha vendido dos veces):
+
+2|5;2025-10-15
+2|10;2025-10-18
+1|2;2025-10-19
+
+
+4. Calcular Ingreso Total por Producto
+
+El programa solicita el Nombre y la Referencia del producto y realiza los siguientes pasos:
+
+Obtiene el ID y el Precio Unitario del producto (manejando la excepción ProductoNoEncontradoException).
+
+Busca todas las líneas en Ventas.txt que correspondan a ese ID.
+
+Suma la Cantidad Vendida en todos los registros.
+
+Calcula el Ingreso Total (Suma de Cantidades Vendidas * Precio Unitario).
+
+Muestra por pantalla el resultado con un formato de dos decimales.
+
+Validación de Datos
+
+Se deben manejar los posibles NumberFormatException al intentar leer las cantidades vendidas o el precio unitario, saltando las líneas mal formadas en los ficheros y mostrando un mensaje de advertencia por consola.

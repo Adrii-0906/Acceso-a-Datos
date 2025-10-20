@@ -1,0 +1,3 @@
+1|0000 AAA|Porche 911 GT|1000.0|Disponible
+2|0001 AAB|Seat Leon|200.0|Disponible
+3|0002 AAC|Ford Focus Mk2|250.0|Disponible

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b03ca59e-85fc-4f2d-b538-1029ca2407e5" name="Changes" comment="" />
+    <list default="true" id="1f465010-c1e8-4948-ab23-ce6b5e2b39b2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,31 +18,32 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="346AxOXZVUWFZ8bCnZLFfYQqK6N" />
+  <component name="ProjectId" id="34KIiuzhVSLHjbzBoGUhiYSlYV9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.MainAlumnos.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainProductos.executor": "Run",
+    "Application.MainVehiculos.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "onboarding.tips.debug.path": "/home/adrian/Escritorio/ExamenAminFusilamiento/src/Main.java"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b03ca59e-85fc-4f2d-b538-1029ca2407e5" name="Changes" comment="" />
-      <created>1760523894277</created>
+      <changelist id="1f465010-c1e8-4948-ab23-ce6b5e2b39b2" name="Changes" comment="" />
+      <created>1760955966934</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1760523894277</updated>
+      <updated>1760955966934</updated>
     </task>
     <servers />
   </component>
