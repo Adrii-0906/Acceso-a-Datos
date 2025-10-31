@@ -62,4 +62,25 @@ public class CustomerRestController {
         }
         return null;
     }
+
+    @PatchMapping("/clientes")
+    public Customer patchCliente(@RequestBody Customer customer) {
+        for (Customer c : customers) {
+            if (c.getId() == customer.getId()) {
+                if (customer.getNombre() != null) {
+                    c.setNombre(customer.getNombre());
+                }
+                if (customer.getUsername() != null) {
+                    c.setUsername(customer.getUsername());
+                }
+                if (customer.getPassword() != null) {
+                    c.setPassword(customer.getPassword());
+                }
+
+                return c;
+            }
+        }
+        return null;
+    }
+
 }

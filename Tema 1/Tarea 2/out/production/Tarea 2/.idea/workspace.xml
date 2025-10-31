@@ -30,10 +30,9 @@
     "Application.Main.executor": "Run",
     "Application.MainDOM.executor": "Run",
     "Application.MainSAX.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/adrian/Documentos/2DAM/Acceso a Datos/Tema 2/CursoSpringBoot"
+    "last_opened_file_path": "/home/adrian/Documentos/2DAM/Acceso a Datos/Tema 1/Tarea 2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

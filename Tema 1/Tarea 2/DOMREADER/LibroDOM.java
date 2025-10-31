@@ -1,7 +1,9 @@
+package DOMREADER;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Libro {
+public class LibroDOM {
 
     // Atributos
     private String id;
@@ -14,9 +16,7 @@ public class Libro {
     private String moneda;
 
     // Hacemos el constructor de solo las listas
-
-
-    public Libro() {
+    public LibroDOM() {
         this.autores = new ArrayList<>();
         this.categorias = new ArrayList<>();
     }

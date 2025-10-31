@@ -1,3 +1,5 @@
+package DOMREADER;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -10,19 +12,19 @@ import java.util.List;
 
 public class DomReader {
 
-    public static List<Libro> read(File xml) throws Exception{
+    public static List<LibroDOM> read(File xml) throws Exception{
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(xml);
 
         NodeList nodosLibros = doc.getElementsByTagName("book");
-        List<Libro> libros = new ArrayList<>();
+        List<LibroDOM> libros = new ArrayList<>();
 
         for (int i = 0; i < nodosLibros.getLength(); i++) {
             Element e = (Element) nodosLibros.item(i);
 
-            Libro libro = new Libro();
+            LibroDOM libro = new LibroDOM();
 
             libro.setId(e.getAttribute("id"));
             libro.setIsbn(e.getAttribute("isbn"));
@@ -47,9 +49,27 @@ public class DomReader {
             NodeList precio = e.getElementsByTagName("price");
             libro.setMoneda(((Element) precio.item(0)).getAttribute("currency"));
 
+            libro.setAno(parsearInt(obtenerTexto(e, "year")));
+            libro.setPrecio(parsearDouble(obtenerTexto(e, "price")));
+
+            libros.add(libro);
 
         }
 
         return libros;
+    }
+
+
+    private static String obtenerTexto(Element parent, String tag) {
+        NodeList nl = parent.getElementsByTagName(tag);
+        return (nl.getLength() > 0) ? nl.item(0).getTextContent().trim() : "";
+    }
+
+    private static int parsearInt(String cadena) {
+        return cadena.isEmpty() ? 0 : Integer.parseInt(cadena);
+    }
+
+    private static double parsearDouble(String cadena) {
+        return cadena.isEmpty() ? 0 : Double.parseDouble(cadena);
     }
 }
